@@ -6,6 +6,7 @@
       "packages/*"
     ],
     "scripts": {
-        "dev": "pnpm -r dev"
+        "dev": "pnpm -r dev",
+        "format": "pnpm -r format"
     }
 }
