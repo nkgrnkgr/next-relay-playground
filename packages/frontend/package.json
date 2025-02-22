@@ -1,5 +1,5 @@
 {
-  "name": "next-relay-playground",
+  "name": "@next-relay-playground/frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome check --write"
+    "format": "biome check --write",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "apollo-server": "^3.13.0",

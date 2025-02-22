@@ -1,12 +1,14 @@
 {
-    "name": "next-relay-playground",
-    "private": true,
-    "version": "1.0.0",
-    "workspaces": [
-      "packages/*"
-    ],
-    "scripts": {
-        "dev": "pnpm -r dev",
-        "format": "pnpm -r format"
-    }
+  "name": "next-relay-playground",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "format": "pnpm -r format",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
 }
