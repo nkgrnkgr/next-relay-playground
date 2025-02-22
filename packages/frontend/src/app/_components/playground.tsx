@@ -1,21 +1,9 @@
 "use client";
 
 import { use, useState } from "react";
+import type { Data } from "../_functions/fetchData";
 
-const fetchData = async () => {
-  const res = await fetch("http://localhost:8787", {
-    mode: "cors",
-    credentials: "include",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  const data = await res.json();
-  return data as { message: string };
-};
-
-export const Playground = () => {
-  const data = use(fetchData());
+export const Playground = ({ data }: { data: Data }) => {
   const [count, setCount] = useState(0);
   return (
     <div>
