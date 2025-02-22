@@ -1,4 +1,7 @@
+import client from "@/lib/apollo-client";
+import { ApolloProvider } from "@apollo/client";
 import type { Metadata } from "next";
+import { ApolloWrapper } from "./_components/ApolloWrapper";
 
 export const metadata: Metadata = {
   title: "next relay",
@@ -12,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="ja">
-      <body>{children}</body>
+      <body>
+        <ApolloWrapper>{children}</ApolloWrapper>
+      </body>
     </html>
   );
 }
